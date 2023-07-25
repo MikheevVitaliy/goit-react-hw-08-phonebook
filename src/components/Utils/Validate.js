@@ -5,6 +5,19 @@ const ContactSchema = Yup.object().shape({
   number: Yup.string().required(''),
 });
 
-const phoneNumberMask = [/\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/];
+const phoneNumberMask = [
+  /\d/,
+  /\d/,
+  /\d/,
+  '-',
+  /\d/,
+  /\d/,
+  /\d/,
+  '-',
+  /\d/,
+  /\d/,
+  /\d/,
+  /\d/,
+];
 
 export { ContactSchema, phoneNumberMask };
